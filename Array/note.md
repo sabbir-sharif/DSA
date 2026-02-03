@@ -29,16 +29,21 @@ Complexity
 - if mid > key, then end = mid - 1
 - if key doenst exist, return -1 
 
-Complexity
+  Complexity
 - Time complexity: O(log n) log 2 base n
 - Space complexity: O(n)
 
-Note
+  Note
 - Array should be sorted
-
+------
 2. Reverse in Array
 - Reverse an array without 2nd array(space complexity will be O(n))
 - Define left = 0, right = n-1
 - while left <= right
 - swap indexed values
 - left++, right--
+
+  Complexity
+- Time complexity: O(n)
+- Space complexity: O(1) // 2 variables needed only instead of new array
+
