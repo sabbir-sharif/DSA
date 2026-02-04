@@ -47,3 +47,46 @@ Complexity
 - Time complexity: O(n)
 - Space complexity: O(1) // 2 variables needed only instead of new array
 
+### Day 04
+1. Sub Array
+- define start index - outer loop
+- define end index - inner loop
+- print the values from start to end
+
+Complexity:
+- Time: O(n^3)
+
+------
+2. Sub Array Sum
+- define start index - outer loop
+- define end index - inner loop
+- sum the values from start to end
+
+Complexity:
+- Time: O(n^3)
+
+### Day 05
+1. Max subarray sum
+- define start index - outer loop
+- define end index - inner loop
+- sum the values from start to end
+- compare max sum with current sum
+
+Complexity:
+- Time: O(n^3)
+------------------
+2. Max subarray sum - Prefix sum
+- Calculate prefex sum
+- current sum = prefix[end] - prefix[start-1]
+- compare current sum and max sum
+
+Complexity:
+- Time: O(n^2)
+
+----------
+3. Max subarray sum - kadane's algorithm
+- if current sum is less than 0 current sum = 0
+- if current sum > 0 then compare with max sum
+
+Complexity:
+- Time: O(n)
