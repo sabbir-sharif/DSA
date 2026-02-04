@@ -85,8 +85,10 @@ Complexity:
 
 ----------
 3. Max subarray sum - kadane's algorithm
-- if current sum is less than 0 current sum = 0
-- if current sum > 0 then compare with max sum
+- max sum = arr[0], current sum = 0
+- If current sum is less than 0 current sum = 0
+- current sum = current sum + arr[i]
+- Max sum = Max(current sum, max sum)
 
 Complexity:
 - Time: O(n)

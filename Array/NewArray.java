@@ -128,10 +128,10 @@ public class NewArray {
     }
     //Max sub array sum - Kadanes's Algorithm
     public static void maxSubArrSumKadane(int arr[]){
-        int currentSum = 0, maxSum = Integer.MIN_VALUE;
+        int currentSum = 0, maxSum = arr[0];
         for (int i = 0; i < arr.length; i++) {
+            currentSum = (currentSum <= 0) ? 0 : currentSum;
             currentSum = currentSum + arr[i];
-            currentSum = (currentSum < 0) ? 0 : currentSum;
             maxSum = (maxSum < currentSum) ? currentSum : maxSum;
         }
         System.out.println("Max Sub arr sum - Kadane's: " + maxSum);
