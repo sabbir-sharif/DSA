@@ -5,5 +5,6 @@
 - If arr[i] < arr[i+1] then swap (Descending)
 
 Complexity:
-- Time: O(n^2)
+- Time: Worst case: O(n^2)
+        Best case: O(n)
 - Space: O(n)
