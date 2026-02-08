@@ -20,7 +20,24 @@ public class Basic_Sort {
                 break;
             }
         }
-
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+    //Selection sort
+    public static void selectionSort(int arr[]){
+        for (int i = 0; i < arr.length - 1; i++) {
+            int minPosition = i;
+            for (int j = i+1; j < arr.length; j++) {
+                if (arr[minPosition] > arr[j]){
+                    minPosition = j;
+                }
+            }
+            int temp = arr[minPosition];
+            arr[minPosition] = arr[i];
+            arr[i] = temp;
+        }
+        System.out.println("Selection Sort: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
@@ -30,7 +47,8 @@ public class Basic_Sort {
         int arr[] = {5, 4, 1, 3 ,2};
 
         //Bubble Sort
-        bubble_sort(arr);
-        //
+        //bubble_sort(arr);
+        //Selection Sort
+        selectionSort(arr);
     }
 }

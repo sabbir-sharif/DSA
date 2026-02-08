@@ -8,3 +8,14 @@ Complexity:
 - Time: Worst case: O(n^2)
         Best case: O(n)
 - Space: O(n)
+
+---
+
+### Selection sort
+- In every iteration select the smallest and put it at front one after another.
+- Outer loop 0 to n-1
+- Inner loop i+1 to n
+
+Complexity:
+- Time: O(n^2)
+- Space: O(n)
