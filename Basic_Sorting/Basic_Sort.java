@@ -20,6 +20,7 @@ public class Basic_Sort {
                 break;
             }
         }
+        System.out.println("Bubble Sort: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
@@ -42,6 +43,24 @@ public class Basic_Sort {
             System.out.print(arr[i] + " ");
         }
     }
+    //Insertion sort
+    public static void insertionSort(int arr[]){
+        for (int i = 1; i < arr.length; i++) {
+            int current = arr[i];
+            int prev = i-1;
+            //Finding the right place
+            while(prev >= 0 && arr[prev] > current){
+                arr[prev+1] = arr[prev];
+                prev--;
+            }
+            //Insert
+            arr[prev+1] = current;
+        }
+        System.out.println("Insertion Sort: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
 
     public static void main(String[] args) {
         int arr[] = {5, 4, 1, 3 ,2};
@@ -49,6 +68,8 @@ public class Basic_Sort {
         //Bubble Sort
         //bubble_sort(arr);
         //Selection Sort
-        selectionSort(arr);
+        //selectionSort(arr);
+        //Insertion Sort
+        insertionSort(arr);
     }
 }

@@ -19,3 +19,12 @@ Complexity:
 Complexity:
 - Time: O(n^2)
 - Space: O(n)
+
+### Insertion sort
+- Start a[0] as sorted part and rest is unsorted part
+- select every value and find the right position in sorted part.
+- Insert the value.
+
+Complexity:
+- Time: O(n^2)
+- Space: O(n)
