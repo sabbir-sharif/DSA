@@ -61,6 +61,32 @@ public class Basic_Sort {
             System.out.print(arr[i] + " ");
         }
     }
+    //Counting sort
+    public static void countingSort(int arr[]){
+        //Finding the largest
+        int largest = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            largest = Math.max(largest, arr[i]);
+        }
+        //Counting the frequency of each element
+        int count[] = new int[largest+1];
+        for (int i = 0; i < arr.length; i++) {
+            count[arr[i]]++;
+        }
+        //Sort
+        int j = 0;
+        for (int i = 0; i < count.length; i++) {
+            while(count[i] > 0){
+                arr[j] = i;
+                j++;
+                count[i]--;
+            }
+        }
+        System.out.println("Counting sort: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
 
     public static void main(String[] args) {
         int arr[] = {5, 4, 1, 3 ,2};
@@ -70,6 +96,8 @@ public class Basic_Sort {
         //Selection Sort
         //selectionSort(arr);
         //Insertion Sort
-        insertionSort(arr);
+        //insertionSort(arr);
+        //Counting Sort
+        countingSort(arr);
     }
 }

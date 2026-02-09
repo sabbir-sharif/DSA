@@ -28,3 +28,14 @@ Complexity:
 Complexity:
 - Time: O(n^2)
 - Space: O(n)
+
+### Counting sort
+- Usually use for positive numbers and value range is short
+- Find the largest
+- make array of largest+1 size
+- count frequency of each number of main array
+- then put every number in main array as sorted
+
+Complexity:
+- O(n) in best case, O(n^2)
+- Space: O(2n)
