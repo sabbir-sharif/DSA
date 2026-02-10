@@ -92,3 +92,11 @@ Complexity:
 
 Complexity:
 - Time: O(n)
+
+### 2D Matrix
+Spiral Matrix
+- 4 variable
+- start_column, start_row, end_column, end_row
+- while: start_row <= end_row and start_col <= end_row
+- print top col, right row, bottom col, left row
+- start_column++, start_row++, end_column--, end_row--

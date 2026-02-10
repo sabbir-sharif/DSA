@@ -38,7 +38,7 @@ public class Basic_Sort {
             arr[minPosition] = arr[i];
             arr[i] = temp;
         }
-        System.out.println("Selection Sort: ");
+        System.out.println("\nSelection Sort: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
@@ -56,7 +56,7 @@ public class Basic_Sort {
             //Insert
             arr[prev+1] = current;
         }
-        System.out.println("Insertion Sort: ");
+        System.out.println("\nInsertion Sort: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
@@ -82,22 +82,25 @@ public class Basic_Sort {
                 count[i]--;
             }
         }
-        System.out.println("Counting sort: ");
+        System.out.println("\nCounting sort: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
     }
 
     public static void main(String[] args) {
-        int arr[] = {5, 4, 1, 3 ,2};
+        int arr_bubble[] = {5, 4, 1, 3 ,2};
+        int arr_selection[] = {5, 4, 1, 3 ,2};
+        int arr_insertion[] = {5, 4, 1, 3 ,2};
+        int arr_counting[] = {5, 4, 1, 3 ,2};
 
         //Bubble Sort
-        //bubble_sort(arr);
+        bubble_sort(arr_bubble);
         //Selection Sort
-        //selectionSort(arr);
+        selectionSort(arr_selection);
         //Insertion Sort
-        //insertionSort(arr);
+        insertionSort(arr_insertion);
         //Counting Sort
-        countingSort(arr);
+        countingSort(arr_counting);
     }
 }
