@@ -100,3 +100,13 @@ Spiral Matrix
 - while: start_row <= end_row and start_col <= end_row
 - print top col, right row, bottom col, left row
 - start_column++, start_row++, end_column--, end_row--
+
+### Diagonal Sum
+- when i == j, diagonalSum += arr[i][j];
+- when i != n - 1 - i diagonalSum += arr[i][arr.length-1-i]
+- i != n - 1 - i this condition defines if it is the middle cell.
+- if it is [n,n] then skip for SD sum
+
+Complexity:
+- Time: O(n)
+- Space: O(n)
