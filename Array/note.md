@@ -109,4 +109,23 @@ Spiral Matrix
 
 Complexity:
 - Time: O(n)
-- Space: O(n)
+- Space: O(n*n)
+
+### Search in 2D Matrix
+1. Staircase search
+- Start from top right corner
+- from there row wise greater and colum wise smaller values
+- so we can eliminate easily either 1 col or row
+- if key < cell then column--
+- if key is > cell, then row++
+
+Complexity:
+- Time: O(n+m)
+- Space: O(n*n)
+---
+2. Binary Search:
+- Consider each row as a 1D array
+- apply binary search in each array
+
+Complexity:
+- Time: O(nlog(n))
