@@ -10,3 +10,9 @@
 - Initial position x = 0, y = 0
 - Now, n: y++, s: y--, e: x++, w: x--
 - sqrt((x*x)+(y*y))
+
+### Immutable
+- String is immutable. 
+- If any changes in that it will create new string
+- eg: str = "". now str += "a" it will create new
+- But str = "abc", strconcat("d"). str would be "abc" unchanged 

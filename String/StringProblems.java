@@ -47,5 +47,13 @@ public class StringProblems {
         isPalindrome(st);
         //Shortest displacement
         shortestDisplacement(st);
+
+        String str = "abc";
+        str.concat("d");
+        System.out.println(str);
+
+        String str1 = new String("efg");
+        str1.concat("h");
+        System.out.println(str1);
     }
 }
