@@ -15,4 +15,9 @@
 - String is immutable. 
 - If any changes in that it will create new string
 - eg: str = "". now str += "a" it will create new
-- But str = "abc", strconcat("d"). str would be "abc" unchanged 
+- But str = "abc", strconcat("d"). str would be "abc" unchanged
+
+### String Builder
+- It is not string. to make it string use toString() method
+- it solves the immutable problem of string 
+- O(n)

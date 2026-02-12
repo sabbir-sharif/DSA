@@ -55,5 +55,11 @@ public class StringProblems {
         String str1 = new String("efg");
         str1.concat("h");
         System.out.println(str1);
+        //String Builder
+        StringBuilder sb = new StringBuilder("");
+        for (char i = 'a'; i <= 'z'; i++) {
+            sb.append(i);
+        }
+        System.out.println(sb);
     }
 }
