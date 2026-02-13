@@ -40,13 +40,36 @@ public class StringProblems {
         double displacement = Math.sqrt((x*x) + (y*y));
         System.out.println("the displacement: " + displacement);
     }
+    //String Compression
+    public static void stringCompression(String str){
+        System.out.print("Compressed String: ");
+        for (int i = 0; i < str.length(); i++) {
+            int count = 1;
+            char ch = str.charAt(i);
+
+            while(i < str.length() - 1 && ch == str.charAt(i+1)){
+                count++;
+                i++;
+            }
+            System.out.print(ch);
+            if(count > 1){
+                System.out.print(count);
+            }
+        }
+        System.out.println();
+    }
     public static void main(String[] args) {
         String st = "wneenesennn";
+        String strCompress = "aaabbccccdd";
+        String s = "abc";
 
         //Palindrome
-        isPalindrome(st);
+        //isPalindrome(st);
         //Shortest displacement
-        shortestDisplacement(st);
+        //shortestDisplacement(st);
+        //String compression
+        stringCompression(strCompress);
+        //stringCompression(s);
 
         String str = "abc";
         str.concat("d");

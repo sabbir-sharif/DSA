@@ -21,3 +21,11 @@
 - It is not string. to make it string use toString() method
 - it solves the immutable problem of string 
 - O(n)
+
+### String Compresson
+- aaabbcccdd : a3b2c3d2
+- abc : abc
+- Another way: Use String builder  
+- 
+Complexity:
+- Time: O(n)
