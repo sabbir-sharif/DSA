@@ -1,7 +1,7 @@
 package Problem_Solving;
 
 public class ReverseArray {
-
+    //Using 2 pointer and swapping value
     public static void reverseArray(int arr[]){
 
         for (int i = 0; i < arr.length/2; i++) {
