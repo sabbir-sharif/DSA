@@ -129,3 +129,9 @@ Complexity:
 
 Complexity:
 - Time: O(nlog(n))
+
+### Two Sum
+- Declare map<arr[i], i>
+- x = target - arr[i]
+- Iterate over the array and check in the map if the value = x
+- if not insert into map
