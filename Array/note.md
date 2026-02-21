@@ -135,3 +135,10 @@ Complexity:
 - x = target - arr[i]
 - Iterate over the array and check in the map if the value = x
 - if not insert into map
+
+### Next Permutation
+- Find pivot -> from right to left arr[i] < arr[i+1]
+- find the greater than pivot from right part of the array [pivot + 1, end] right to left
+- swap(pivot, successor)
+- reverse the array part. [pivot+1, end]
+- if no pivot found -> reverse the array
