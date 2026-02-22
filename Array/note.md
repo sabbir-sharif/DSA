@@ -142,3 +142,8 @@ Complexity:
 - swap(pivot, successor)
 - reverse the array part. [pivot+1, end]
 - if no pivot found -> reverse the array
+
+### Longest Common Prefix
+- Assume prefix = str[0]
+- compare one by one (str[j].startsWith(prefix))
+- if not match reduce the prefix
