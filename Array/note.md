@@ -147,3 +147,8 @@ Complexity:
 - Assume prefix = str[0]
 - compare one by one (str[j].startsWith(prefix))
 - if not match reduce the prefix
+
+### Plus One
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+- If all 9 : O(n)
