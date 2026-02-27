@@ -152,3 +152,14 @@ Complexity:
 - Time Complexity: O(n)
 - Space Complexity: O(1)
 - If all 9 : O(n)
+
+### Add to array form LC_989
+- Loop from right to left
+- While k > 0 or i >= 0
+- k += arr[i]
+- i--
+- Add last digit of k to result list
+- k /= 10
+- No overflow 
+- Time: O(n)
+- Space: O(n)
