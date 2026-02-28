@@ -163,3 +163,10 @@ Complexity:
 - No overflow 
 - Time: O(n)
 - Space: O(n)
+
+### Best time for stock buy and sell
+- Iterate over the array
+- Check min price
+- Check max profit
+- -Time: O(n)
+- Space: O(n)
