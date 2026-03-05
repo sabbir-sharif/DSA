@@ -1,6 +1,21 @@
 package Array;
 
 public class TrappingRainWater_LC_42 {
+    //Problem: Trapping Water LC_42
+    //Type: Prefix Max/Two Pointer
+    //Explaination: Calculate left and right max height for each index
+    //              Calculate trapping water for every index (min(left, right)-index value)
+    //              if negative -> 0
+    //              Calculate total by summing all
+
+    //Time: O(n)
+    //Space: O(n) -> for extra array
+
+    //Learning: How prefix calculation reduce time complexity.
+    //From O(n^2) to O(n)
+
+    //More optimal : Two pointer
+    //Space: O(1)
     public static int trappingRainWater(int arr[]){
         int left_max[] = new int[arr.length];
         int right_max[] = new int[arr.length];
